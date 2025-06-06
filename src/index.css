@@ -1,0 +1,25 @@
+/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
+@layer base {
+  :root {
+    --color-primary-50: #F7F6F6;
+    --color-primary-100: #EFEEED;
+    --color-primary-200: #DCD9D7;
+    --color-primary-300: #C9C5C2;
+    --color-primary-400: #ABA5A0;
+    --color-primary-500: #968F89;
+    --color-primary-600: #7D7671;
+    --color-primary-700: #635D59;
+    --color-primary-800: #46413D;
+    --color-primary-900: #2E2B29;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-primary-800 bg-gray-50;
+  }
+}
