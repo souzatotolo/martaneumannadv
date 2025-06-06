@@ -16,7 +16,7 @@ export const Header = () => {
           SOBRE
         </a>
         <a href="#areas" className="text-primary-600 hover:text-primary-800 transition-colors">
-          AREAS DE ATUACAO
+          AREAS DE ATUAÇÃO
         </a>
         <a href="#contato" className="text-primary-600 hover:text-primary-800 transition-colors">
           CONTATO
