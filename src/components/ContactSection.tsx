@@ -57,11 +57,8 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium mb-1">Endereço</h4>
                   <p className="text-beige-100">
-                    Av. Paulista, 1000, Conjunto 101
                     <br />
-                    Bela Vista - São Paulo/SP
-                    <br />
-                    CEP: 01310-100
+                    Santo André - São Paulo/SP
                   </p>
                 </div>
               </div>
@@ -69,7 +66,7 @@ export const ContactSection = () => {
                 <PhoneIcon className="mr-3 mt-1 flex-shrink-0" size={20} />
                 <div>
                   <h4 className="font-medium mb-1">Telefone</h4>
-                  <p className="text-beige-100">(11) 3456-7890</p>
+                  <p className="text-beige-100">(11) 9000-0000</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -77,7 +74,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium mb-1">E-mail</h4>
                   <p className="text-beige-100">
-                    contato@advogadamaria.com.br
+                    contato@martaneumannadv.com.br
                   </p>
                 </div>
               </div>
