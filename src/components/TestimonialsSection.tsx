@@ -21,11 +21,10 @@ export const TestimonialsSection = () => {
   return <section id="depoimentos" className="py-16 bg-primary-100 w-full">
     <div className="container mx-auto px-4">
       <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-navy-800">
-        O Que Dizem Nossos <span className="text-burgundy-700">Clientes</span>
+        O QUE DIZEM NOSSOS <span className="text-burgundy-700">CLIENTES</span>
       </h2>
       <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-        A satisfação de nossos clientes é o nosso maior reconhecimento.
-        Confira alguns depoimentos de pessoas que confiaram em nosso trabalho.
+        CONFIRA ALGUNS DEPOIMENTOS DE PESSOAS QUE CONFIARAM EM NOSSO TRABALHO
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {testimonials.map((testimonial, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-sm relative">

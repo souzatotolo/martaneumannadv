@@ -4,33 +4,32 @@ import { CTAButton } from './CTAButton';
 export const PracticeAreasSection = () => {
   const areas = [{
     icon: <UserIcon size={32} className="text-burgundy-700" />,
-    title: 'Para Aposentados',
+    title: 'PARA APOSENTADOS',
     description: 'Revisão de benefícios, aposentadoria por tempo de contribuição, e demais aposentadorias',
-    items: ['Revisão da Vida Toda', 'Aposentadoria Especial', 'Auxílio-Doença', 'Pensão por Morte']
+    items: ['Revisões', 'Aposentadoria especial', 'Auxílio-doença', 'Pensão por morte']
   }, {
     icon: <BriefcaseIcon size={32} className="text-burgundy-700" />,
-    title: 'Para Trabalhadores CLT',
+    title: 'PARA TRABALHADORES',
     description: 'Defesa dos seus direitos trabalhistas, verbas rescisórias, horas extras e assédio moral.',
-    items: ['Rescisão Indireta', 'Horas Extras', 'Assédio Moral', 'Danos Morais']
+    items: ['Rescisão indireta', 'Horas extras', 'Assédio moral', 'Danos morais']
   }, {
     icon: <BuildingIcon size={32} className="text-burgundy-700" />,
-    title: 'Para Empresas',
+    title: 'PARA EMPRESAS',
     description: 'Consultoria preventiva, acordos trabalhistas e representação em processos administrativos.',
-    items: ['Análise de Contratos', 'Acordos Coletivos', 'Compliance Trabalhista', 'Defesa em Reclamações']
+    items: ['Análise de contratos', 'Acordos coletivos', 'Compliance trabalhista', 'Defesa em reclamações']
   }, {
     icon: <LandmarkIcon size={32} className="text-burgundy-700" />,
-    title: 'Para Servidores Públicos',
+    title: 'PARA SERVIDORES PÚBLICOS',
     description: 'Aposentadoria especial para servidores, abono de permanência e incorporação de gratificações.',
-    items: ['Aposentadoria Especial', 'Abono de Permanência', 'Progressão Funcional', 'Adicionais de Insalubridade']
+    items: ['Aposentadoria especial', 'Abono de permanência', 'Progressão funcional', 'Adicionais de insalubridade']
   }];
   return <section id="areas" className="py-16 bg-primary-200 w-full">
     <div className="container mx-auto px-4">
       <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-navy-800">
-        Áreas de <span className="text-burgundy-700">Atuação</span>
+        ÁREAS DE <span className="text-burgundy-700">ATUAÇÃO</span>
       </h2>
       <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-        Oferecemos serviços jurídicos especializados em Direito Previdenciário
-        e Trabalhista, atendendo às necessidades específicas de cada cliente.
+        OFERECEMOS SERVIÇOS JURÍDICOS ESPECIALIZADOS EM DIREITO PREVIDENCIÁRIO E TRABALHISTA, ATENDENDO ÀS NECESSIDADES ESPECÍFICAS DE CADA CLIENTE.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {areas.map((area, index) => <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">

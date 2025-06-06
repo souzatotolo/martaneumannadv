@@ -18,12 +18,6 @@ export const Header = () => {
         <a href="#areas" className="text-primary-600 hover:text-primary-800 transition-colors">
           AREAS DE ATUACAO
         </a>
-        <a href="#blog" className="text-primary-600 hover:text-primary-800 transition-colors">
-          BLOG JURIDICO
-        </a>
-        <a href="#depoimentos" className="text-primary-600 hover:text-primary-800 transition-colors">
-          DEPOIMENTOS
-        </a>
         <a href="#contato" className="text-primary-600 hover:text-primary-800 transition-colors">
           CONTATO
         </a>
@@ -40,19 +34,14 @@ export const Header = () => {
     {isMenuOpen && <nav className="md:hidden bg-white border-t border-gray-100 py-4">
       <div className="container mx-auto px-4 flex flex-col space-y-3">
         <a href="#sobre" className="text-primary-800 py-2 px-4 hover:bg-gray-50 rounded" onClick={() => setIsMenuOpen(false)}>
-          Sobre
+          SOBRE
         </a>
         <a href="#areas" className="text-primary-800 py-2 px-4 hover:bg-gray-50 rounded" onClick={() => setIsMenuOpen(false)}>
-          Áreas de Atuação
+          ÁREAS DE ATUAÇÃO
         </a>
-        <a href="#blog" className="text-primary-800 py-2 px-4 hover:bg-gray-50 rounded" onClick={() => setIsMenuOpen(false)}>
-          Blog Jurídico
-        </a>
-        <a href="#depoimentos" className="text-primary-800 py-2 px-4 hover:bg-gray-50 rounded" onClick={() => setIsMenuOpen(false)}>
-          Depoimentos
-        </a>
+
         <a href="#contato" className="text-primary-800 py-2 px-4 hover:bg-gray-50 rounded" onClick={() => setIsMenuOpen(false)}>
-          Contato
+          CONTATO
         </a>
         <div className="px-4">
           <CTAButton text="Agende uma Consulta" fullWidth />

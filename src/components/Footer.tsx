@@ -12,7 +12,7 @@ export const Footer = () => {
             </h3>
           </div>
           <p className="text-beige-200 max-w-xs">
-            Advocacia especializada em Direito Previdenciário e Trabalhista,
+            Advocacia especializada em Direito Previdenciário e Trabalhista
             com atendimento personalizado e humanizado.
           </p>
         </div>
@@ -30,16 +30,7 @@ export const Footer = () => {
                   Áreas de Atuação
                 </a>
               </li>
-              <li>
-                <a href="#blog" className="text-beige-200 hover:text-white transition-colors">
-                  Blog Jurídico
-                </a>
-              </li>
-              <li>
-                <a href="#depoimentos" className="text-beige-200 hover:text-white transition-colors">
-                  Depoimentos
-                </a>
-              </li>
+
               <li>
                 <a href="#contato" className="text-beige-200 hover:text-white transition-colors">
                   Contato
@@ -92,7 +83,7 @@ export const Footer = () => {
       <div className="pt-8 border-t border-gray-700 text-center text-sm text-beige-200">
         <p className="mb-2">
           © {new Date().getFullYear()} Dra. Marta Neumann Advocacia - OAB/SP
-          123.456 - Todos os direitos reservados.
+          442.710 - Todos os direitos reservados.
         </p>
         <p>
           As informações contidas neste site têm caráter meramente informativo

@@ -3,19 +3,19 @@ import { CalendarIcon, ClockIcon } from 'lucide-react';
 import { CTAButton } from './CTAButton';
 export const BlogSection = () => {
   const articles = [{
-    title: 'Mudanças Recentes na Previdência Social',
+    title: 'Mudanças recentes na previdência social',
     excerpt: 'Saiba como as novas regras da Previdência Social podem afetar sua aposentadoria e quais medidas tomar para garantir seus direitos.',
     date: '22 de Abril, 2023',
     readTime: '5 min',
     image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
   }, {
-    title: 'Como Solicitar Benefícios do INSS',
+    title: 'Como solicitar benefícios do INSS',
     excerpt: 'Um guia prático sobre o processo administrativo para solicitação de benefícios previdenciários junto ao INSS.',
     date: '15 de Março, 2023',
     readTime: '7 min',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
   }, {
-    title: 'O Que Saber Sobre Rescisões na CLT',
+    title: 'O que saber sobre rescisões na CLT',
     excerpt: 'Entenda seus direitos em caso de demissão, os tipos de rescisão contratual e como calcular suas verbas rescisórias.',
     date: '28 de Fevereiro, 2023',
     readTime: '6 min',

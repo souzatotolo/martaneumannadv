@@ -14,12 +14,12 @@ export const ContactSection = () => {
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 bg-beige-50 p-6 rounded-lg">
           <h3 className="text-xl font-semibold mb-6 text-navy-800">
-            Envie sua Mensagem
+            Envie sua mensagem
           </h3>
           <form>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-700 mb-2 text-sm font-medium">
-                Nome Completo
+                Nome completo
               </label>
               <input type="text" id="name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-burgundy-700" placeholder="Seu nome completo" />
             </div>
@@ -49,7 +49,7 @@ export const ContactSection = () => {
         <div className="md:w-1/2">
           <div className="bg-navy-700 text-white p-6 rounded-lg h-full">
             <h3 className="text-xl font-semibold mb-6">
-              Informações de Contato
+              Informações de contato
             </h3>
             <div className="space-y-6">
               <div className="flex items-start">
@@ -81,7 +81,7 @@ export const ContactSection = () => {
               <div className="flex items-start">
                 <ClockIcon className="mr-3 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <h4 className="font-medium mb-1">Horário de Atendimento</h4>
+                  <h4 className="font-medium mb-1">Horário de atendimento</h4>
                   <p className="text-beige-100">
                     Segunda a Sexta: 9h às 18h
                     <br />

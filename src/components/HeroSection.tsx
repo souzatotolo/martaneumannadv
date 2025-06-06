@@ -13,11 +13,10 @@ export const HeroSection = () => {
             </h1>
           </div>
           <h2 className="text-2xl md:text-2xl font-semibold mb-4 text-primary-700">
-            Suporte Jurídico com Ética e Transparência
+            SUPORTE JURÍDICO COM ÉTICA E TRANSPARÊNCIA
           </h2>
           <p className="text-lg mb-6 text-gray-700">
-            Especialista em Direito Previdenciário e Trabalhista, dedicada a
-            proteger seus direitos com excelência e compromisso.
+            ESPECIALISTA EM DIREITO PREVIDENCIÁRIO E TRABALHISTA DEDICADA A PROTEGER SEUS DIREITOS COM EXCELÊNCIA E COMPROMISSO
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/richardtotolo/agendar-consulta" target='_blank' rel="noopener noreferrer">
@@ -35,7 +34,7 @@ export const HeroSection = () => {
             </div>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-6 py-2 rounded-full shadow-md">
               <p className="text-primary-700 font-medium whitespace-nowrap">
-                OAB/SP 444.444
+                OAB/SP 442.710
               </p>
             </div>
           </div>
