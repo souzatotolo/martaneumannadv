@@ -48,13 +48,12 @@ export const PracticeAreasSection = () => {
               </li>)}
             </ul>
           </div>
-          <div className="px-6 pb-6">
-            <CTAButton text="Saiba Mais" secondary fullWidth />
-          </div>
         </div>)}
       </div>
       <div className="mt-12 text-center">
-        <CTAButton text="Consulte Seu Caso Agora" />
+        <a href="https://calendly.com/richardtotolo/agendar-consulta" target='_blank' rel="noopener noreferrer">
+          <CTAButton text="Agende uma Consulta" />
+        </a>
       </div>
     </div>
   </section>;

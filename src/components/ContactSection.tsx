@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, MessageCircleIcon } from 'lucide-react';
+import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, MessageCircleIcon, Calendar } from 'lucide-react';
 import { CTAButton } from './CTAButton';
 export const ContactSection = () => {
   return <section id="contato" className="py-16 bg-primary-400 w-full">
@@ -90,9 +90,14 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className="mt-8">
-              <a href="https://wa.me/5511987654321" className="flex items-center justify-center bg-green-600 text-white py-3 px-4 rounded-md hover:bg-green-700 transition-colors">
+              <a href="https://wa.me/5511987654321" className="flex items-center justify-center bg-green-400 text-white py-3 px-4 rounded-md hover:bg-green-600 transition-colors">
                 <MessageCircleIcon className="mr-2" size={20} />
                 Fale Conosco pelo WhatsApp
+              </a>
+              <br />
+              <a href="https://calendly.com/richardtotolo/agendar-consulta" className="flex items-center justify-center bg-blue-400 text-white py-3 px-4 rounded-md hover:bg-blue-600 transition-colors">
+                <Calendar className="mr-2" size={20} />
+                Ou agende uma consulta
               </a>
             </div>
           </div>
