@@ -5,11 +5,10 @@ export const ContactSection = () => {
   return <section id="contato" className="py-16 bg-primary-400 w-full">
     <div className="container mx-auto px-4">
       <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-navy-800">
-        Entre em <span className="text-burgundy-700">Contato</span>
+        ENTRE EM <span className="text-burgundy-700">CONTATO</span>
       </h2>
       <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-        Estamos à disposição para esclarecer suas dúvidas e auxiliar na defesa
-        dos seus direitos.
+        ESTAMOS À DISPOSIÇÃO PARA ESCLARECER SUAS DÚVIDAS E AUXILIAR NA DEFESA DOS SEUS DIREITOS
       </p>
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2 bg-beige-50 p-6 rounded-lg">

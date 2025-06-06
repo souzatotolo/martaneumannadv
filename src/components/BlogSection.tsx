@@ -24,11 +24,10 @@ export const BlogSection = () => {
   return <section id="blog" className="py-16 bg-primary-400 w-full">
     <div className="container mx-auto px-4">
       <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-navy-800">
-        Blog <span className="text-burgundy-700">Jurídico</span>
+        BLOG <span className="text-burgundy-700">JURÍDICO</span>
       </h2>
       <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-        Artigos e informações relevantes sobre Direito Previdenciário e
-        Trabalhista para manter você bem informado.
+        ARTIGOS E INFORMAÇÕES RELEVANTES SOBRE DIREITO PREVIDENCIÁRIO E TRABALHISTA PARA MANTER VOCÊ BEM INFORMADO
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {articles.map((article, index) => <div key={index} className="bg-white border border-none rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
