@@ -26,8 +26,15 @@ export const Header = () => {
         </a>
       </nav>
       {/* Mobile Menu Button */}
-      <button className="md:hidden text-gray-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      <button
+        className="md:hidden text-gray-300 transition duration-300 ease-in-out"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        {isMenuOpen ? (
+          <X size={24} className="transition duration-300 ease-in-out" />
+        ) : (
+          <Menu size={24} className="transition duration-300 ease-in-out" />
+        )}
       </button>
     </div>
     {/* Mobile Navigation */}
