@@ -100,7 +100,8 @@ export const ContactSection = () => {
                   <MailIcon className="mr-3 mt-1 flex-shrink-0 text-primary-600" size={20} />
                   <div>
                     <h4 className="font-medium mb-1">E-mail</h4>
-                    <p>contato@martaneumannadv.com.br</p>
+                    <p className="break-words overflow-hidden max-w-full">
+                      contato@martaneumannadv.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
