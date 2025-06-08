@@ -12,13 +12,14 @@ export const AboutSection = () => {
           <div className="md:w-2/5">
             <div className="w-full lg:w-1/2 flex justify-center">
               <div className="relative">
-                <div className="w-96 h-96 rounded-full overflow-hidden border-4 border-primary-700 shadow-lg mx-auto relative">
+                <div className="w-60 h-60 sm:w-70 sm:h-70 md:w-92 md:h-92 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary-700 shadow-lg mx-auto relative">
                   <img
                     src="https://media.licdn.com/dms/image/v2/D4D03AQHyleBawtijEA/profile-displayphoto-shrink_400_400/B4DZUEe2k5HkAg-/0/1739536952370?e=1754524800&v=beta&t=BV9uXH_xEUWzbIzcavH84Uded5Y0Rti0WAfHjsNE1Mk"
                     alt="Dra. Marta Neumann - Advogada"
                     className="w-full h-full object-cover"
                   />
                 </div>
+
 
 
 
@@ -30,7 +31,7 @@ export const AboutSection = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-3/5">
+          <div className="md:w-3/5 text-center lg:text-left">
             <p className="text-primary-100 mb-6 leading-relaxed">
               Graduada em Direito pela Universidade Metodista, com
               especialização em Direito Previdenciário pelo instituto Legale,
