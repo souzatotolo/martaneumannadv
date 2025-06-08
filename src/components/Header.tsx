@@ -31,7 +31,7 @@ export const Header = () => {
       </button>
     </div>
     {/* Mobile Navigation */}
-    {isMenuOpen && <nav className="md:hidden bg-primary-600 border-t py-4">
+    {isMenuOpen && <nav className="md:hidden bg-primary-600 py-2">
       <div className="container mx-auto px-4 flex flex-col space-y-3">
         <a href="#sobre" className="text-gray-200 py-2 px-4 hover:bg-gray-50 rounded" onClick={() => setIsMenuOpen(false)}>
           SOBRE

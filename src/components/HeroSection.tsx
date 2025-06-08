@@ -20,7 +20,7 @@ export const HeroSection = () => {
       {/* Conteúdo centralizado e acima do overlay */}
       <div className="relative z-10 container flex flex-col items-center justify-center mx-auto px-4 text-center max-w-3xl">
         <div className="flex items-starts justify-center mb-4">
-          <h1 className="text-10xl md:text-5xl font-montserrat text-gray-50">
+          <h1 className="text-10xl md:text-5xl font-montserrat text-gray-100">
             DRA. MARTA NEUMANN
           </h1>
         </div>
