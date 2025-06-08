@@ -32,7 +32,7 @@ export const ContactSection = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
+                  className="w-full px-4 py-2 border border-primary-400 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
                   placeholder="Seu nome completo"
                 />
               </div>
@@ -43,7 +43,7 @@ export const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
+                  className="w-full px-4 py-2 border border-primary-400 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
                   placeholder="seu.email@exemplo.com"
                 />
               </div>
@@ -54,7 +54,7 @@ export const ContactSection = () => {
                 <input
                   type="tel"
                   id="phone"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
+                  className="w-full px-4 py-2 border border-primary-400 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
                   placeholder="(11) 98765-4321"
                 />
               </div>
@@ -65,7 +65,7 @@ export const ContactSection = () => {
                 <textarea
                   id="message"
                   rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
+                  className="w-full px-4 py-2 border border-primary-400 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-600"
                   placeholder="Descreva brevemente seu caso"
                 ></textarea>
               </div>
@@ -122,7 +122,7 @@ export const ContactSection = () => {
                   className="flex items-center justify-center bg-green-500 text-primary-400 py-3 px-4 rounded-md hover:bg-green-700 transition-colors"
                 >
                   <MessageCircleIcon className="mr-2" size={20} />
-                  Fale Conosco pelo WhatsApp
+                  Fale comigo pelo WhatsApp
                 </a>
                 <br />
                 <a
@@ -130,7 +130,7 @@ export const ContactSection = () => {
                   className="flex items-center justify-center bg-blue-500 text-primary-400 py-3 px-4 rounded-md hover:bg-blue-700 transition-colors"
                 >
                   <Calendar className="mr-2" size={20} />
-                  Ou agende uma consulta
+                  Ou agende uma consulta Conosco
                 </a>
               </div>
             </div>
