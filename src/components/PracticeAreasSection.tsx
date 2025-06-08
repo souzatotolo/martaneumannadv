@@ -23,16 +23,16 @@ export const PracticeAreasSection = () => {
     description: 'Aposentadoria especial para servidores, abono de permanência e incorporação de gratificações.',
     items: ['Aposentadoria especial', 'Abono de permanência', 'Progressão funcional', 'Adicionais de insalubridade']
   }];
-  return <section id="areas" className="py-16 bg-primary-200 w-full">
+  return <section id="areas" className="py-16 bg-primary-600 w-full">
     <div className="container mx-auto px-4">
-      <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-navy-800">
-        ÁREAS DE <span className="text-burgundy-700">ATUAÇÃO</span>
+      <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-gray-200">
+        ÁREAS DE <span className="text-gray-200">ATUAÇÃO</span>
       </h2>
-      <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+      <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
         OFERECEMOS SERVIÇOS JURÍDICOS ESPECIALIZADOS EM DIREITO PREVIDENCIÁRIO E TRABALHISTA, ATENDENDO ÀS NECESSIDADES ESPECÍFICAS DE CADA CLIENTE.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {areas.map((area, index) => <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        {areas.map((area, index) => <div key={index} className="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
           <div className="p-6">
             <div className="flex items-center mb-4">
               {area.icon}

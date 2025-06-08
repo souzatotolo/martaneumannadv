@@ -21,16 +21,16 @@ export const BlogSection = () => {
     readTime: '6 min',
     image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80'
   }];
-  return <section id="blog" className="py-16 bg-primary-400 w-full">
+  return <section id="blog" className="py-16 bg-gray-500 w-full">
     <div className="container mx-auto px-4">
-      <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-navy-800">
-        BLOG <span className="text-burgundy-700">JURÍDICO</span>
+      <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-primary-500">
+        BLOG <span className="text-primary-700">JURÍDICO</span>
       </h2>
-      <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+      <p className="text-center text-primary-200 mb-12 max-w-2xl mx-auto">
         ARTIGOS E INFORMAÇÕES RELEVANTES SOBRE DIREITO PREVIDENCIÁRIO E TRABALHISTA PARA MANTER VOCÊ BEM INFORMADO
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {articles.map((article, index) => <div key={index} className="bg-white border border-none rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+        {articles.map((article, index) => <div key={index} className="bg-gray-50 border border-none rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
           <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
           <div className="p-6">
             <div className="flex items-center text-sm text-gray-500 mb-3">

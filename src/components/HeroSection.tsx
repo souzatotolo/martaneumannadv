@@ -4,51 +4,39 @@ import { CTAButton } from './CTAButton';
 
 export const HeroSection = () => {
   return (
-    <section className="bg-primary-100 w-full">
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-          {/* Texto */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-4">
-              <ScaleIcon className="text-primary-700 mr-2" size={28} />
-              <h1 className="text-3xl md:text-4xl font-serif text-primary-800">
-                DRA. MARTA NEUMANN
-              </h1>
-            </div>
-            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-primary-700">
-              SUPORTE JURÍDICO COM ÉTICA E TRANSPARÊNCIA
-            </h2>
-            <p className="text-base md:text-lg mb-6 text-gray-700">
-              ESPECIALISTA EM DIREITO PREVIDENCIÁRIO E TRABALHISTA DEDICADA A PROTEGER SEUS DIREITOS COM EXCELÊNCIA E COMPROMISSO
-            </p>
-            <div className="flex justify-center lg:justify-start">
-              <a
-                href="https://calendly.com/richardtotolo/agendar-consulta"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <CTAButton text="Agende uma Consulta" />
-              </a>
-            </div>
-          </div>
+    <section
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        position: 'relative',
+      }}
+      className="h-[40vw] w-full flex items-center justify-center"
+    >
+      {/* Overlay suave escuro */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-          {/* Imagem */}
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="relative">
-              <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary-700 shadow-lg">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/D4D03AQHyleBawtijEA/profile-displayphoto-shrink_400_400/B4DZUEe2k5HkAg-/0/1739536952370?e=1754524800&v=beta&t=BV9uXH_xEUWzbIzcavH84Uded5Y0Rti0WAfHjsNE1Mk"
-                  alt="Dra. Marta Neumann - Advogada"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-6 py-2 rounded-full shadow-md">
-                <p className="text-primary-700 font-medium whitespace-nowrap">
-                  OAB/SP 442.710
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* Conteúdo centralizado e acima do overlay */}
+      <div className="relative z-10 container flex flex-col items-center justify-center mx-auto px-4 text-center max-w-3xl">
+        <div className="flex items-starts justify-center mb-4">
+          <h1 className="text-12xl md:text-5xl font-montserrat text-gray-100">
+            DRA. MARTA NEUMANN
+          </h1>
+        </div>
+
+        <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-100">
+          SUPORTE JURÍDICO COM ÉTICA E TRANSPARÊNCIA
+        </h2>
+
+        <div>
+          <a
+            href="https://calendly.com/richardtotolo/agendar-consulta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <CTAButton text="Agende uma Consulta" />
+          </a>
         </div>
       </div>
     </section>

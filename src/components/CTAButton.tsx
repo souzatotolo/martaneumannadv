@@ -12,7 +12,7 @@ export const CTAButton = ({
   onClick
 }: CTAButtonProps) => {
   return <button onClick={onClick} className={`
-        ${secondary ? 'bg-white text-primary-800 border border-primary-400 hover:bg-primary-50' : 'bg-primary-500 text-white hover:bg-primary-700'}
+        ${secondary ? 'bg-primary-600 text-gray-200 border border-primary-400 hover:bg-primary-50' : 'bg-gray-300 text-primary-500 hover:bg-gray-700'}
         ${fullWidth ? 'w-full' : ''}
         py-2 px-4 rounded transition-colors duration-200 font-medium
       `}>

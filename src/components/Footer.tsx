@@ -1,17 +1,17 @@
 import React from 'react';
 import { ScaleIcon } from 'lucide-react';
 export const Footer = () => {
-  return <footer className="bg-primary-600 text-white py-12 w-full">
+  return <footer className="bg-primary-600 text-gray-200 py-12 w-full">
     <div className="container mx-auto px-4">
       <div className="flex flex-col md:flex-row justify-between mb-8">
         <div className="mb-6 md:mb-0">
           <div className="flex items-center mb-4">
-            <ScaleIcon className="text-primary-400 mr-2" size={24} />
+            <ScaleIcon className="text-gray-400 mr-2" size={24} />
             <h3 className="text-xl font-serif font-bold">
               Dra. Marta Neumann
             </h3>
           </div>
-          <p className="text-beige-200 max-w-xs">
+          <p className="text-gray-200 max-w-xs">
             Advocacia especializada em Direito Previdenciário e Trabalhista
             com atendimento personalizado e humanizado.
           </p>
@@ -21,18 +21,18 @@ export const Footer = () => {
             <h4 className="text-lg font-medium mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#sobre" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#sobre" className="text-gray-200 hover:text-white transition-colors">
                   Sobre
                 </a>
               </li>
               <li>
-                <a href="#areas" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#areas" className="text-gray-200 hover:text-white transition-colors">
                   Áreas de Atuação
                 </a>
               </li>
 
               <li>
-                <a href="#contato" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#contato" className="text-gray-200 hover:text-white transition-colors">
                   Contato
                 </a>
               </li>
@@ -42,22 +42,22 @@ export const Footer = () => {
             <h4 className="text-lg font-medium mb-4">Áreas de Atuação</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#" className="text-gray-200 hover:text-white transition-colors">
                   Direito Previdenciário
                 </a>
               </li>
               <li>
-                <a href="#" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#" className="text-gray-200 hover:text-white transition-colors">
                   Direito Trabalhista
                 </a>
               </li>
               <li>
-                <a href="#" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#" className="text-gray-200 hover:text-white transition-colors">
                   Aposentadorias
                 </a>
               </li>
               <li>
-                <a href="#" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#" className="text-gray-200 hover:text-white transition-colors">
                   Revisões de Benefícios
                 </a>
               </li>
@@ -67,12 +67,12 @@ export const Footer = () => {
             <h4 className="text-lg font-medium mb-4">Informações Legais</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#" className="text-gray-200 hover:text-white transition-colors">
                   Política de Privacidade
                 </a>
               </li>
               <li>
-                <a href="#" className="text-beige-200 hover:text-white transition-colors">
+                <a href="#" className="text-gray-200 hover:text-white transition-colors">
                   Termos de Uso
                 </a>
               </li>
@@ -80,7 +80,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="pt-8 border-t border-gray-700 text-center text-sm text-beige-200">
+      <div className="pt-8 border-t border-gray-700 text-center text-sm text-gray-200">
         <p className="mb-2">
           © {new Date().getFullYear()} Dra. Marta Neumann Advocacia - OAB/SP
           442.710 - Todos os direitos reservados.

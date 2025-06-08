@@ -18,17 +18,17 @@ export const TestimonialsSection = () => {
     author: 'T.C., Bancário',
     rating: 5
   }];
-  return <section id="depoimentos" className="py-16 bg-primary-100 w-full">
+  return <section id="depoimentos" className="py-16 bg-primary-600 w-full">
     <div className="container mx-auto px-4">
-      <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-navy-800">
-        O QUE DIZEM NOSSOS <span className="text-burgundy-700">CLIENTES</span>
+      <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-gray-400">
+        O QUE DIZEM NOSSOS <span className="text-gray-200">CLIENTES</span>
       </h2>
-      <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+      <p className="text-center text-gray-200 mb-12 max-w-2xl mx-auto">
         CONFIRA ALGUNS DEPOIMENTOS DE PESSOAS QUE CONFIARAM EM NOSSO TRABALHO
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {testimonials.map((testimonial, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-sm relative">
-          <QuoteIcon className="absolute top-4 right-4 text-beige-200" size={32} />
+        {testimonials.map((testimonial, index) => <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-sm relative">
+          <QuoteIcon className="absolute top-4 right-4 text-primary-200" size={32} />
           <div className="flex mb-4">
             {[...Array(testimonial.rating)].map((_, i) => <StarIcon key={i} size={18} className="text-yellow-500 fill-current" />)}
           </div>

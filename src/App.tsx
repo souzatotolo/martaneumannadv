@@ -8,7 +8,7 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 export function App() {
-  return <div className="font-montserrat text-gray-800">
+  return <div className="font-montserrat text-primary-600">
     <Header />
     <main>
       <HeroSection />
