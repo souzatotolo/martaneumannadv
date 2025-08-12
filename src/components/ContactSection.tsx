@@ -11,7 +11,7 @@ import { CTAButton } from './CTAButton';
 
 export const ContactSection = () => {
   return (
-    <section id="contato" className="py-16 bg-gray-500 w-full">
+    <section id="contato" className="py-16 bg-gray-200 w-full">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-4 text-primary-600">
           ENTRE EM <span className="text-primary-600">CONTATO</span>
@@ -71,7 +71,7 @@ export const ContactSection = () => {
                 ></textarea>
               </div>
               <div className="text-center">
-                <CTAButton text="Enviar Mensagem" secondary />
+                <CTAButton text="Enviar Mensagem" />
               </div>
             </form>
           </div>
@@ -125,7 +125,7 @@ export const ContactSection = () => {
                 </a>
                 <br />
                 <a
-                  href="https://calendly.com/orsinitotolo/agendar-consulta"
+                  href="https://calendly.com/richardtotolo/agendar-consulta"
                   className="flex items-center justify-center bg-blue-500 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition-colors"
                 >
                   <Calendar className="mr-2" size={20} />
