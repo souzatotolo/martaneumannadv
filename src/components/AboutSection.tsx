@@ -1,74 +1,92 @@
-import React from 'react';
-import { BookOpenIcon, AwardIcon, HeartHandshakeIcon } from 'lucide-react';
-
+import React, { useState, useEffect } from 'react';
+import escritorio1 from '../assets/escritorio1.jpeg';
+import escritorio2 from '../assets/escritorio2.jpeg';
+import equipe1 from '../assets/equipe1.jpeg';
+import equipe2 from '../assets/equipe2.jpeg';
+import equipe3 from '../assets/equipe3.jpeg';
 export const AboutSection = () => {
+  const images = [
+    escritorio1,
+    escritorio2,
+    equipe1,
+    equipe2,
+    equipe3
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  // Troca automática a cada 4 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
   return (
     <section id="sobre" className="py-16 bg-gray-200 w-full">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-12 text-gray-700">
-          SOBRE <span className="text-primary-300">DRA. MARTA NEUMANN</span>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-center mb-8 text-gray-700">
+          SOBRE O <span className="text-primary-500">ESCRITÓRIO</span>
         </h2>
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <div className="md:w-2/5">
-            <div className="w-full lg:w-1/2 flex justify-center">
-              <div className="relative">
-                <div className="w-60 h-60 sm:w-70 sm:h-70 md:w-92 md:h-92 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary-700 shadow-lg mx-auto relative">
-                  <img
-                    src="https://media.licdn.com/dms/image/v2/D4D03AQHyleBawtijEA/profile-displayphoto-shrink_400_400/B4DZUEe2k5HkAg-/0/1739536952370?e=1754524800&v=beta&t=BV9uXH_xEUWzbIzcavH84Uded5Y0Rti0WAfHjsNE1Mk"
-                    alt="Dra. Marta Neumann - Advogada"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
 
+        <p className="text-primary-900 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+          No Orsini & Totolo, unimos tradição jurídica e inovação para oferecer um atendimento próximo,
+          humano e eficiente. Nossa equipe é especializada em diversas áreas do Direito,
+          sempre comprometida em defender os interesses de nossos clientes com ética, transparência
+          e excelência técnica.
+        </p>
 
-
-
-                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-50 px-6 py-2 rounded-full shadow-md">
-                  <p className="text-primary-700 font-medium whitespace-nowrap">
-                    OAB/SP 442.710
-                  </p>
-                </div>
-              </div>
+        {/* Carrossel */}
+        <div className="relative max-w-3xl mx-auto ">
+          <div className="overflow-hidden rounded-lg shadow-lg max-w-2xl mx-auto h-[500px]">
+            <div
+              className="flex transition-transform duration-700"
+              style={{ transform: `translateX(-${current * 100}%)` }}
+            >
+              {images.map((src, idx) => (
+                <img
+                  key={idx}
+                  src={src}
+                  alt={`Slide ${idx + 1}`}
+                  className="h-full w-auto flex-shrink-0 object-contain"
+                />
+              ))}
             </div>
           </div>
-          <div className="md:w-3/5 text-center lg:text-left">
-            <p className="text-primary-100 mb-6 leading-relaxed">
-              Graduada em Direito pela Universidade Metodista, com
-              especialização em Direito Previdenciário pelo instituto Legale,
-              defendendo os direitos
-              de trabalhadores e beneficiários da Previdência Social.
-            </p>
-            <p className="text-primary-100 mb-8 leading-relaxed">
-              Minha trajetória profissional é marcada pelo compromisso com a
-              justiça social e a defesa incansável dos direitos dos meus
-              clientes, sempre pautada pela ética, transparência e atendimento
-              personalizado.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md">
-                <BookOpenIcon className="text-primary-700 mb-3" size={28} />
-                <h3 className="font-medium text-primary-900 mb-2">
-                  FORMAÇÃO ACADÊMICA
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Graduação e especializações em instituições de excelência
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md">
-                <AwardIcon className="text-primary-700 mb-3" size={28} />
-                <h3 className="font-medium text-primary-900 mb-2">EXPERIÊNCIA</h3>
-                <p className="text-sm text-gray-700">
-                  Diversos processos com atuação especializada
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md">
-                <HeartHandshakeIcon className="text-primary-700 mb-3" size={28} />
-                <h3 className="font-medium text-primary-900 mb-2">COMPROMISSO</h3>
-                <p className="text-sm text-gray-700">
-                  Atendimento humanizado e personalizado
-                </p>
-              </div>
-            </div>
+
+          {/* Botões de navegação */}
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 left-0 -translate-y-1/2 bg-primary-500 text-white p-2 rounded-r hover:bg-primary-600"
+          >
+            ‹
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 right-0 -translate-y-1/2 bg-primary-500 text-white p-2 rounded-l hover:bg-primary-600"
+          >
+            ›
+          </button>
+
+          {/* Dots */}
+          <div className="flex justify-center mt-4 space-x-2">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrent(idx)}
+                className={`w-3 h-3 rounded-full ${current === idx ? 'bg-primary-500' : 'bg-gray-400'
+                  }`}
+              />
+            ))}
           </div>
         </div>
       </div>

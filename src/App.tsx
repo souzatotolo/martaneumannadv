@@ -14,7 +14,7 @@ export function App() {
       <HeroSection />
       <AboutSection />
       <PracticeAreasSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <TestimonialsSection />
       <ContactSection />
     </main>
