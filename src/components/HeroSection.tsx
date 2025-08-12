@@ -13,7 +13,7 @@ export const HeroSection = () => {
         backgroundSize: 'cover', // aumenta o zoom (pode ajustar a % pra mais ou menos)
         position: 'relative',
       }}
-      className="h-[100vw] md:h-[40vw] w-full flex items-center justify-center"
+      className="h-[80vw] md:h-[40vw] w-full flex items-center justify-center"
     >
       {/* Overlay suave escuro */}
       <div className="absolute inset-0 bg-black bg-opacity-20"></div>

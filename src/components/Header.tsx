@@ -11,7 +11,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            className="h-20 w-auto " // tamanho proporcional e responsivo
+            className="h-12 w-auto sm:h-18 " // tamanho proporcional e responsivo
             src={logo}
             alt="Orsini Totolo"
           />
