@@ -124,13 +124,13 @@ export const ContactSection = () => {
                   Fale conosco pelo WhatsApp
                 </a>
                 <br />
-                <a
-                  href="https://calendly.com/richardtotolo/agendar-consulta"
+                {/* <a
+                  href="https://wa.me/5511959867106"
                   className="flex items-center justify-center bg-blue-500 text-white py-3 px-4 rounded-md hover:bg-blue-700 transition-colors"
                 >
                   <Calendar className="mr-2" size={20} />
                   Agende uma consulta
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

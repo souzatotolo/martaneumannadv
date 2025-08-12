@@ -95,7 +95,7 @@ export const PracticeAreasSection = () => {
         </div>
         <div className="mt-12 text-center">
           <a
-            href="https://calendly.com/richardtotolo/agendar-consulta"
+            href="https://wa.me/5511959867106"
             target="_blank"
             rel="noopener noreferrer"
           >

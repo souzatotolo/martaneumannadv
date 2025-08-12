@@ -6,7 +6,6 @@ import equipe2 from '../assets/equipe2.jpeg';
 import equipe3 from '../assets/equipe3.jpeg';
 export const AboutSection = () => {
   const images = [
-    escritorio1,
     escritorio2,
     equipe1,
     equipe2,
@@ -47,7 +46,7 @@ export const AboutSection = () => {
 
         {/* Carrossel */}
         <div className="relative max-w-3xl mx-auto ">
-          <div className="overflow-hidden rounded-lg shadow-lg max-w-2xl mx-auto h-[500px]">
+          <div className="overflow-hidden rounded-lg shadow-lg max-w-2xl mx-auto h-[700px]">
             <div
               className="flex transition-transform duration-700"
               style={{ transform: `translateX(-${current * 100}%)` }}

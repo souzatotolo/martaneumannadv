@@ -11,7 +11,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            className="h-12 w-auto sm:h-18 " // tamanho proporcional e responsivo
+            className="h-14 w-auto sm:h-19" // tamanho proporcional e responsivo
             src={logo}
             alt="Orsini Totolo"
           />
@@ -19,17 +19,17 @@ export const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#sobre" className="text-white hover:text-[#D4AF37] transition-colors">
+          <a href="#sobre" className="text-white text-sm hover:text-[#D4AF37] transition-colors">
             SOBRE
           </a>
-          <a href="#areas" className="text-white hover:text-[#D4AF37] transition-colors">
+          <a href="#areas" className="text-white text-sm hover:text-[#D4AF37] transition-colors">
             ÁREAS DE ATUAÇÃO
           </a>
-          <a href="#contato" className="text-white hover:text-[#D4AF37] transition-colors">
+          <a href="#contato" className="text-white text-sm  hover:text-[#D4AF37] transition-colors">
             CONTATO
           </a>
           <a
-            href="https://calendly.com/richardtotolo/agendar-consulta"
+            href="https://wa.me/5511959867106"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -77,7 +77,7 @@ export const Header = () => {
             </a>
             <div className="px-4">
               <a
-                href="https://calendly.com/richardtotolo/agendar-consulta"
+                href="https://wa.me/5511959867106"
                 target="_blank"
                 rel="noopener noreferrer"
               >
